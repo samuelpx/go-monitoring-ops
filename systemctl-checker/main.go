@@ -14,7 +14,11 @@ func main() {
         fmt.Printf("wow, got error %s", err)
     }
 
-    outputLines := strings.Split(string(output), "\r\n")
+    outputLines := strings.Split(string(output), "\n")
 
-    fmt.Println(outputLines)
-}
+    for i, line := range outputLines { 
+        fmt.Printf("Oh yeah, this is line %d\n\n",i)
+        fmt.Println(line)
+        }
+    }
+    
